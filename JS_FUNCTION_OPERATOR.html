@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>This is example of function in JS</h1>
+        <p>This function convert fahrenheit into celsius</p>
+        <p id="func"></p>
+        <p id="func2"></p>
+        <script>
+            function toCelsius(a) {
+                return (5/9) * (a-32);
+            }
+            let x = toCelsius(100);
+            let y = 'the temperature is ' + toCelsius(39) + ' celsius.'
+            document.getElementById('func').innerHTML = x ;
+            document.getElementById('func2').innerHTML = y ;
+        </script>
+    </body>
+</html>
